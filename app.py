@@ -173,3 +173,7 @@ st.html(
     </script>
     """
 )
+#
+# from streamlit_javascript import st_javascript
+# return_value = st_javascript('async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-4914616940850872" crossorigin="anonymous" ')
+# st.markdown(f"Return value was: {return_value}")
