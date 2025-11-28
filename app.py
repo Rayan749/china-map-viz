@@ -10,8 +10,8 @@ from streamlit_echarts import Map as ste_map
 from streamlit_echarts import st_pyecharts
 from ads import ads
 
-index_path= pathlib.Path(st.__file__).parent / "static" / "index.html"
-ads(index_path)
+# index_path= pathlib.Path(st.__file__).parent / "static" / "index.html"
+# ads(index_path)
 
 with open("合肥市.geojson", "r") as f:
     map_geo = ste_map("合肥", json.loads(f.read()))
