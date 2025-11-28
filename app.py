@@ -1,4 +1,6 @@
 import json
+import pathlib
+
 import pandas as pd
 import streamlit as st
 from pyecharts import options as opts
@@ -6,11 +8,10 @@ from pyecharts.charts import Map
 from pyecharts.globals import JsCode, ThemeType
 from streamlit_echarts import Map as ste_map
 from streamlit_echarts import st_pyecharts
+from ads import ads
 
-
-
-
-
+index_path= pathlib.Path(st.__file__).parent / "static" / "index.html"
+ads(index_path)
 
 with open("合肥市.geojson", "r") as f:
     map_geo = ste_map("合肥", json.loads(f.read()))

@@ -1,3 +1,4 @@
+beautifulsoup4
 altair
 attrs==25.4.0
 blinker==1.9.0
